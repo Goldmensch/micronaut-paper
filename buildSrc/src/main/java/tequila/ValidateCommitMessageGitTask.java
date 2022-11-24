@@ -68,7 +68,7 @@ public class ValidateCommitMessageGitTask extends DefaultTask {
             var type = matcher.group("type");
             var scope = matcher.group("scope");
             if (!types.contains(type)) {
-                errors.add("-> Unkown type '%header'".formatted());
+                errors.add("-> Unkown type '%s'".formatted(type));
             }
             if (scope != null && !scopes.contains(scope)) {
                 errors.add("-> Unkown scope '%s'".formatted(scope));

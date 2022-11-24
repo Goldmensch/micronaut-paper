@@ -1,2 +1,2 @@
-rootProject.name = "CHANGE_THAT"
+rootProject.name = "micronaut-paper"
 include("main")
